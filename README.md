@@ -1,11 +1,13 @@
 # getline/getdelim
 
+[![Build Status](https://travis-ci.org/ivanra/getline.svg?branch=master)](https://travis-ci.org/ivanra/getline)
+
 Read a delimited record from stream.
 
 Yet another (hopefully portable C) implementation of getline/getdelim.
 These are ersatz functions, a drop-in replacement, to be used on those occasions when your C library does not already support them.
 
-For more details, see [Open Group Base Specification for getdelim/getline][opengroup-spec]
+For more details, see [Open Group Base Specification for getdelim/getline][opengroup-spec].
 
 ## Building the project
 
