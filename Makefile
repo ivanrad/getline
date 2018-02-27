@@ -4,7 +4,7 @@ CFLAGS = -Wall
 
 all: getline.o libgetline.so.1 libgetline.a
 
-getline.o: getline.c getline.c
+getline.o: getline.c getline.h
 	$(CC) $(CFLAGS) -o getline.o -c -fPIC getline.c
 
 libgetline.so.1: getline.o
