@@ -1,6 +1,6 @@
 # getline/getdelim
 
-[![Build Status](https://travis-ci.org/ivanra/getline.svg?branch=master)](https://travis-ci.org/ivanra/getline)
+[![Build Status](https://travis-ci.org/ivanrad/getline.svg?branch=master)](https://travis-ci.org/ivanrad/getline)
 
 Read a delimited record from stream.
 
