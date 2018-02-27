@@ -4,8 +4,6 @@
  *
  * For more details, see: http://pubs.opengroup.org/onlinepubs/9699919799/functions/getline.html
  *
- * (w) Ivan Radanovic <ivanra at gmail>
- *
  */
 
 #include "getline.h"
