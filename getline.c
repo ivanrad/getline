@@ -55,6 +55,7 @@ ssize_t getdelim(char **lineptr, size_t *n, int delim, FILE *stream) {
                 errno = ENOMEM;
                 return -1;
             }
+            cur_pos = new_lineptr + (cur_pos - *lineptr);
             *lineptr = new_lineptr;
             *n = new_lineptr_len;
         }
