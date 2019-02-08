@@ -12,8 +12,9 @@
 #include <limits.h>
 
 ssize_t getdelim(char **lineptr, size_t *n, int delim, FILE *stream) {
-    char c, *cur_pos, *new_lineptr;
+    char *cur_pos, *new_lineptr;
     size_t new_lineptr_len;
+    int c;
 
     if (lineptr == NULL || n == NULL || stream == NULL) {
         errno = EINVAL;
@@ -58,7 +59,7 @@ ssize_t getdelim(char **lineptr, size_t *n, int delim, FILE *stream) {
             *n = new_lineptr_len;
         }
 
-        *cur_pos++ = c;
+        *cur_pos++ = (char)c;
 
         if (c == delim)
             break;
